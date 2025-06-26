@@ -1,0 +1,311 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body ::selection {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.cursor {
+    height: 2vh;
+    width: 2vh;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: difference;
+}
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+}
+
+.page1 nav {
+    height: 10vh;
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page1 nav img {
+    width: 6%;
+}
+
+.page1 nav .right {
+    display: flex;
+    gap: 30px;
+    align-items: self-end;
+}
+
+.right a {
+    text-decoration: none;
+    color: black;
+    font-size: 3vh;
+    font-weight: 500;
+    ;
+}
+
+.right i {
+    font-size: 4vh;
+}
+
+.homesec {
+    padding: 7% 15%;
+    font-size: 7vh;
+}
+
+.homesec h1 {
+    font-weight: 400;
+}
+
+.box {
+    display: flex;
+}
+
+.box video {
+    width: 15%;
+    border-radius: 50px;
+}
+
+
+.animi video {
+    border-radius: 50%;
+    width: 10%;
+    position: fixed;
+    bottom: 10vh;
+    right: 5vh;
+}
+
+/* page2 */
+
+.page2 {
+    height: 100vh;
+    width: 100%;
+}
+
+.play {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    pointer-events: none;
+    pointer-events: auto;
+}
+
+.play i {
+    font-size: 10vh;
+}
+
+.page2 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* page3 */
+.page3 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+}
+
+.page3 .left video {
+    height: 80vh;
+}
+
+.page3 .right{
+    width: 40%;
+}
+.page3 .right p{
+    font-size: 4.5vh;
+    font-weight: 500;
+    margin-bottom: 6vh;
+}
+
+.page3box{
+    height: 25vh;
+    width: 25vw;
+    border-radius: 70px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.innerdiv{
+    background-color: white;
+    height: 25vh;
+    width: 25vw;
+    transition: all ease-in-out 0.5s;
+    font-size: 5vh;
+    padding:  10vh 13vh;
+}
+
+
+.page3box:hover .innerdiv{
+    transform: translateY(-100%);
+    background-color: black;
+    color: white;
+}
+
+
+/* pagee4 */
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.page4box {
+    color: white;
+    font-size: 10vh;
+    padding: 5vh 0vh 5vh 10vh;
+}
+
+.page4box h1{
+    /* margin-left: 10vh; */
+    font-weight: 500;
+}
+.page4box2{
+    display: flex;
+
+}
+
+.page4box2 video{
+    height: 20vh;
+    width: 15vw;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.page4div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding: 5%;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.page4div video {
+height: 80vh;
+width:  30vw;
+object-fit: cover;
+border-radius: 20px;
+}
+.v2{
+    margin-top: 20vh;
+}
+
+.v4{
+    margin-top: 20vh;
+}
+
+.v6{
+margin-top: 20vh;
+}
+
+
+.explore{
+    position: fixed;
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+    background-color: #f8f5f5;
+    padding: 5vh 3vh;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+/* page5 */
+
+.page5{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+
+.page5div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Changed from space-around to flex-start */
+    color: white;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    padding: 5vh 0vh;
+}
+
+.page5div h1 {
+    font-size: 20vh;
+    white-space: nowrap;
+    margin-right: 5vh; /* Use right margin instead of left for spacing between repeats */
+    letter-spacing: 1px;
+    font-weight: 500;
+    animation: move 2s linear infinite; /* Increased duration + linear for smooth flow */
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(Calc(-100% - 5vh));
+    }
+}
+
+
+.page5box{
+    font-size: 8vh;
+    color: white;
+    padding:  2vh 40vh;
+}
+.page5box h1{
+    font-weight: 500;
+    text-align: center;
+}
+.page5b{
+    height: 15vh;
+    width: 30vw;
+    background-color: white;
+    margin-left: 30vh;
+    overflow: hidden;
+    border-radius: 10vh;
+    border: none;
+}
+.page5b .inner{
+    text-align: center;
+    text-transform: uppercase;
+    height: 15vh;
+    width: 30vw;
+    padding-top: 3vh;
+    color: black;
+    transition: all ease-in 0.5s;
+}
+
+.page5b:hover .inner{
+    background-color: black;
+    color: white;
+    transform: translateY(-100%);
+}
